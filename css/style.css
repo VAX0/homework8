@@ -92,4 +92,39 @@ button:active {
       text-shadow: 0 0 45px red;
     }
   }
+
+  /* task4 */
+.task4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 31px;
+    position: relative;
+  }
+  .task4 div {
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    border-width: 31px;
+    border-style: solid;
+    border-color: blue red green green;
+    animation: spin 1s linear infinite;
+  }
+  .task4 p {
+    position: absolute;
+    font-size: 40px;
+    color: green;
+    font-weight: bold;
+  }
   
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .task4 div:hover {
+    animation-play-state: paused;
+  }
