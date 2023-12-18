@@ -1,0 +1,33 @@
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+/* task1 */
+.section1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(228, 119, 155);
+}
+
+button {
+    width: 250px;
+    height: 95px;
+    font-size: large;
+    background-color: rgb(228, 119, 155);
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: white;
+    margin: 50px;
+    box-shadow: 7px 7px 7px 2px black, 3px 3px 6px 0 white inset;
+    border: none;
+    border-radius: 21px;
+    text-shadow: 5px 5px 5px black;
+}
+
+button:active {
+    box-shadow: 5px 6px 7px 2px black inset,
+        -3px -3px 7px 0 white inset;
+    text-shadow: 1px 1px 4px black;
+}
