@@ -37,71 +37,83 @@ button:active {
     display: flex;
     justify-content: center;
     padding: 55px;
-  }
-  .card {
+}
+
+.card {
     padding: 21px;
     width: 350px;
     transition-duration: 1s;
-  }
-  .card img {
+}
+
+.card img {
     height: 300px;
     width: 300px;
     transition-duration: 1s;
-  }
-  h3 {
+}
+
+h3 {
     color: rgb(80, 27, 43);
     text-wrap: initial;
     text-align: center;
-    font-size:large;
-  }
-  .card:hover {
+    font-size: large;
+}
+
+.card:hover {
     border-radius: 31px;
     box-shadow: 4px 4px 9px 0 rgb(80, 27, 43), -4px -4px 9px 0 rgb(80, 27, 43);
-  }
-  .card:hover img {
+}
+
+.card:hover img {
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
-  }
+}
 
-  /* task3 */
+/* task3 */
 .task3 {
     margin: 55px;
     display: flex;
     justify-content: center;
-  }
-  .task3 p {
+}
+
+.task3 p {
     color: red;
     font-size: 140px;
     letter-spacing: 25px;
     animation: chartva 0.5s infinite;
-  }
-  @keyframes chartva {
-    0% {
-      text-shadow: 0 0 0 red;
-    }
-    25% {
-      text-shadow: 0 0 15px red;
-    }
-    50% {
-      text-shadow: 0 0 25px red;
-    }
-    75% {
-      text-shadow: 0 0 35px red;
-    }
-    100% {
-      text-shadow: 0 0 45px red;
-    }
-  }
+}
 
-  /* task4 */
+@keyframes chartva {
+    0% {
+        text-shadow: 0 0 0 red;
+    }
+
+    25% {
+        text-shadow: 0 0 15px red;
+    }
+
+    50% {
+        text-shadow: 0 0 25px red;
+    }
+
+    75% {
+        text-shadow: 0 0 35px red;
+    }
+
+    100% {
+        text-shadow: 0 0 45px red;
+    }
+}
+
+/* task4 */
 .task4 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 31px;
     position: relative;
-  }
-  .task4 div {
+}
+
+.task4 div {
     height: 210px;
     width: 210px;
     border-radius: 50%;
@@ -109,48 +121,97 @@ button:active {
     border-style: solid;
     border-color: blue red green green;
     animation: spin 1s linear infinite;
-  }
-  .task4 p {
+}
+
+.task4 p {
     position: absolute;
     font-size: 40px;
     color: green;
     font-weight: bold;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  .task4 div:hover {
-    animation-play-state: paused;
-  }
+}
 
-  /* task5 */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.task4 div:hover {
+    animation-play-state: paused;
+}
+
+/* task5 */
 header {
     display: flex;
     background-color: rgb(225, 171, 84);
     justify-content: center;
     align-items: center;
     padding: 45px;
-  }
-  header nav {
+}
+
+header nav {
     width: 100%;
-  }
-  header nav ul {
+}
+
+header nav ul {
     display: flex;
-    justify-content:space-around;
-  }
-  header ul li a {
+    justify-content: space-around;
+}
+
+header ul li a {
     font-size: 60px;
     color: white;
     text-shadow: 3px 3px 3px black;
     transition-duration: 1s;
-  }
-  header ul li a:hover {
+}
+
+header ul li a:hover {
     text-shadow: 0 0 25px black, 0 0 55px black,
-      0 0 75px black, 0 0 95px black;
-  }
+        0 0 75px black, 0 0 95px black;
+}
+
+/* task6 */
+.task6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.progress {
+    height: 45px;
+    width: 50%;
+    border: 3px solid black;
+    border-radius: 31px;
+    position: relative;
+}
+
+.progress .color {
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(to right, rgb(164, 159, 159), rgb(87, 87, 144));
+    animation: loading 5s linear;
+}
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.task6 p {
+    position: absolute;
+    font-size: 24px;
+    letter-spacing: 2px;
+    color: rgb(105, 27, 27);
+}
