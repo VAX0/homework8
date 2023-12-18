@@ -56,9 +56,40 @@ button:active {
   }
   .card:hover {
     border-radius: 31px;
-    box-shadow: 4px 5px 9px 0 rgb(80, 27, 43), -4px -5px 9px 0 rgb(80, 27, 43);
+    box-shadow: 4px 4px 9px 0 rgb(80, 27, 43), -4px -4px 9px 0 rgb(80, 27, 43);
   }
   .card:hover img {
     border-top-left-radius: 31px;
     border-top-right-radius: 31px;
   }
+
+  /* task3 */
+.task3 {
+    margin: 55px;
+    display: flex;
+    justify-content: center;
+  }
+  .task3 p {
+    color: red;
+    font-size: 140px;
+    letter-spacing: 25px;
+    animation: chartva 0.5s infinite;
+  }
+  @keyframes chartva {
+    0% {
+      text-shadow: 0 0 0 red;
+    }
+    25% {
+      text-shadow: 0 0 15px red;
+    }
+    50% {
+      text-shadow: 0 0 25px red;
+    }
+    75% {
+      text-shadow: 0 0 35px red;
+    }
+    100% {
+      text-shadow: 0 0 45px red;
+    }
+  }
+  
